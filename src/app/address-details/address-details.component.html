@@ -1,0 +1,13 @@
+<div class="addressDetails">
+    <div class="addressHead">
+        <h2 id="fullNameHead">Full Name</h2>
+        <h2 id="addressHead">Address</h2>
+        <h2 id="cityHead">City</h2>
+        <h2 id="stateHead">State</h2>
+        <h2 id="zipCodeHead">Zip Code</h2>
+        <h2 id="phoneNumberHead">Phone Number</h2>
+    </div>
+
+    <!-- ✅ NgFor directive ka use -->
+    <app-person-details-bar *ngFor="let person of persons" [person]="person"></app-person-details-bar>
+</div>

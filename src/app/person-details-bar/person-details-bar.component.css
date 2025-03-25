@@ -1,0 +1,57 @@
+.personDetailsMain{
+    width: 100%;
+    height: 7.5%;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 0.6%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 0.55rem;
+    font-weight: 800;
+    color: #696969;
+}
+.personDetailsMain:hover{
+    box-shadow: 3px 3px 5px 0px #d3d3d3;
+}
+#personFullNameHead{
+    width: 10%;
+}
+#personAddressHead{
+    width: 32%;
+}
+#personCityHead{
+    width: 8%;
+}
+#personStateHead{
+    width: 11%;
+}
+#personZipHead{
+    width: 6%;
+}
+#personPhoneNumberHead{
+    width: 8%;
+    text-align: center;
+}
+.btnDiv{
+    width: 4%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    width: 45%;
+    height: 80%;
+}
+.btn:hover{
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}

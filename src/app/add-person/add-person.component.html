@@ -1,0 +1,58 @@
+<div class="AddPersonDiv">
+  <app-nav-bar></app-nav-bar>
+  <div class="addPersonMain">
+    <div class="addPersonFormMain">
+      <div class="addPersonFormHeadDiv">
+        <h2 id="addPersonFormHead">PERSON ADDRESS FORM</h2>
+      </div>
+      <div class="addPersonFormDiv">
+        <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
+            <!-- Full Name -->
+            <label for="fullName">Full Name</label>
+            <input id="fullName" type="text" formControlName="name" />
+          
+            <!-- Phone Number -->
+            <label for="phoneNumber">Phone Number</label>
+            <input id="phoneNumber" type="text" formControlName="phoneNumber" />
+          
+            <!-- Address -->
+            <label for="address">Address</label>
+            <textarea id="address" rows="4" formControlName="address"></textarea>
+          
+            <!-- City, State, Zip Code (3 Columns in One Line) -->
+            <div class="row">
+              <div class="column">
+                <label for="city">City</label>
+                <select id="city" formControlName="city">
+                  <option *ngFor="let city of cities; let i = index" [value]="city" [disabled]="i === 0">
+                    {{ city }}
+                  </option>
+                </select>
+              </div>
+          
+              <div class="column">
+                <label for="state">State</label>
+                <select id="state" formControlName="state">
+                  <option *ngFor="let state of states; let i = index" [value]="state" [disabled]="i === 0">
+                    {{ state }}
+                  </option>
+                </select>
+              </div>
+          
+              <div class="column">
+                <label for="zipCode">Zip Code</label>
+                <input id="zipCode" type="text" formControlName="zipCode" />
+              </div>
+            </div>
+          
+            <!-- Buttons -->
+            <div class="formButtonDiv">
+              <button type="submit">Add</button>
+              <button type="button" (click)="resetForm()">Reset</button>
+            </div>
+          </form>
+          
+      </div>
+    </div>
+  </div>
+</div>

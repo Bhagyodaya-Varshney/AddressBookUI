@@ -1,0 +1,138 @@
+.AddPersonDiv {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.addPersonMain {
+  width: 100vw;
+  height: 90vh;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.addPersonFormMain {
+  width: 40%;
+  height: 80%;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.266);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.addPersonFormHeadDiv {
+  width: 100%;
+  height: 12%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #0e9afe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#addPersonFormHead {
+  font-family: "Roboto";
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+.addPersonFormDiv {
+  width: 100%;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 80%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.7rem;
+  font-family: "Roboto";
+  font-weight: 700;
+  color: #7d7d7d;
+}
+
+input,
+textarea {
+  border: 1.5px solid #abaaaa;
+  border-radius: 3px;
+  height: 10%;
+  font-size: 0.9rem;
+  font-family: "Roboto";
+  font-weight: 600;
+  color: #7d7d7d;
+  padding-left: 2%;
+}
+#address {
+  height: 25%;
+  padding-top: 1%;
+}
+
+.row {
+  width: 100%;
+  height: 13%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.column {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.column > input{
+    width: 100%;
+    height: 60%;
+}
+select {
+  width: 100%;
+  height: 60%;
+  border: 1.5px solid #abaaaa;
+  border-radius: 3px;
+  color: #7d7d7d;
+  cursor: pointer;
+}
+
+.formButtonDiv {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 5%;
+}
+
+button {
+  width: 25%;
+  height: 90%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border: none;
+  background-color: #adabab;
+  color: #3a3a3a;
+  font-family: "Roboto";
+  font-weight: 700;
+  border-radius: 5px;
+  font-size: 0.7rem;
+}
+button:hover {
+  border: 1px solid #3a3a3a;
+}

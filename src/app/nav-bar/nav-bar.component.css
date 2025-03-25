@@ -1,0 +1,21 @@
+.navBar{
+    background-color: white;
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.addressBookLogo{
+    height: 80%;
+    width: 4%;
+}
+.userLogo{
+    height: 60%;
+    width: 3%;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+}
